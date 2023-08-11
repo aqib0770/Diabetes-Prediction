@@ -4,8 +4,8 @@ import pickle
 application=Flask(__name__)
 app=application
 
-scaler=pickle.load(open('Model/standardScaler','rb'))
-model=pickle.load(open('Model/Log_reg','rb'))
+scaler=pickle.load(open('Model/standardScaler.pkl','rb'))
+model=pickle.load(open('Model/Log_reg.pkl','rb'))
 
 @app.route('/')
 def index():
